@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img></img>
+
+	
+	<button id= "beeperOne">Beeper</button>
+	<button class = "beeperTwo">Beeper 2</button>
+	<button class = "beeperThree">Beerper 3</button>
+	<div></div>
+	<p id = "output">HEY</p>
+	<input id = "color"></input>
+	<button id = "go">Click Me</button>
+
+   <p>What does .append() do?</p>
+   <ul>
+   	<li> <strong>A.Insert content to the end of an element.</strong></li>
+   	<li>B.Insert content to the beginning of an element.</li>
+   	<li>C.Add a .hide() effect to a specified content.</li>
+   	<li>D.Add a .show() effect to a specified content.</li>
+
+   </ul>
+
+
+	<div class = "show">
+	</div>
+	<div id="everything">
+	<h1>Practice JQuery</h1>
+	<p>Here's some text!</p>
+	<p>Here's a second set of text!</p>
+	<p>Lets show the Rat Pack</p>
+	<div id="secret">We should hide this!</div>
+	<p>div above was hiden with the following jquery code <strong>$('#secret').hide();</strong></p>
+	</div>
+
+	<div>
+		<p>
+			6-
+				$(body).css(background-color, 'green')<br>
+				This wont work! Why? Select all that apply.
+				Answer Choices:
+				<ul>
+				<li><strong>A.body is not in a string</strong></li>
+				<li>B.It WILL run.</li>
+				<li><strong>C.the background-color is not in a string</strong></li>
+
+
+			    </ul>
+
+		</p>
+	</div>
+	<div>
+		<ol>
+			<li>Here is thing one.</li>
+			<li>Here is thing two.</li>
+			<li>Here is thing three.</li>
+		</ol>
+		<p>for Q8 we use the following jquery code to append the 4th list item: 	<strong>('ol').append(.....)</strong></p>
+	</div>
+	<div>
+		<p><strong>Part 2 -Question 1</strong></p>
+		<p> 
+			1-Answer Choices:<br>
+			Window says hi, after 1 second<br>
+			Window says hi, immediately<br>
+			Alice says hi, after 1 second<br>
+			Alice says hi, immediately<br>
+			<strong>Bob says hi, after 1 second</strong><br>
+			Bob says hi, immediately<br>
+		</p>
+	</div>
+
+	<div>question 4: the answer is result=20</div>
+
+	<div>
+		Answer Choices:<br>
+		"Hi I am Alice"<br>
+		"Hi I am Bob"<br>
+		"<strong>Hi I am window"</strong><br>
+		"Hi I am undefined"<br>
+	</div>
+
+	<div>
+		<p><strong>question 5:</strong></p>
+		Answer Choices: <br>
+					10 <br>
+					<strong>20</strong> <br>
+					30 <br>
+					NaN <br>
+	</div>
+<br><br>
+	<div>
+		<p><strong>question 6:</strong></p>
+		Answer Choices <br>:
+		Window says hi, after 1 second <br>
+		Window says hi, immediately <br>
+		<strong>Alice says hi, after 1 second </strong><br>
+		Alice says hi, immediately <br>
+		Window says hi, after 1 second <br>
+		Bob says hi, immediately <br>
+			</div>
+
+			<div><br><br>
+				<p><strong>question 7:</strong></p>
+				Which of the following are reasons why we might reuse code? <br>
+
+					Answer Choices: <br>
+					modularize our code for reuse and composition <br>
+					centralize code to simplify maintenance <br>
+					reduce errors and repetition <br>
+					<strong>DRY - don't repeat yourself (developer efficacy) </strong><br>
+
+			</div>
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous">
+	  	
+	 </script>
+	 <script>
+			$('img').attr("src", "https://image.shutterstock.com/image-photo/senior-man-pensioner-sitting-by-600w-1524565784.jpg")
+			$('button#go').on('click', function(){ $('p#output').text( $('input#color').val() ).css('color', 'red'); });
+
+			$('button.beeperTwo').on('click', function(){
+				alert("Beeper 2 was pushed")
+			});
+
+			$('#secret').hide();
+		
+			$('body').css('background-color', '#f296a1')
+			$('ol').append("<li>Here is thing four.</li>")
+
+			function sayHello () {
+				alert(this.name + " says hello!");
+				}
+
+			var alice = { name: "Alice" };
+			sayHello.call(alice);
+
+
+
+				
+	</script>
+	</body>
+	</html>
